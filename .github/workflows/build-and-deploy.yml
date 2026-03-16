@@ -33,6 +33,7 @@ jobs:
           docker run --rm \
             -v "${{ github.workspace }}:/landscape" \
             -w /landscape \
+            --entrypoint landscape2 \
             ghcr.io/cncf/landscape2:latest \
             build \
               --data-file data.yml \
