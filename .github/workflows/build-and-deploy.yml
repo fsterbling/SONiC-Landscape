@@ -29,7 +29,8 @@ jobs:
 
       - name: Build landscape (via Docker)
         run: |
-          mkdir -p build cache
+          mkdir -p cache
+          chmod -R 777 .
           docker run --rm \
             -v "${{ github.workspace }}:/landscape" \
             -w /landscape \
