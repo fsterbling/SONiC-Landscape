@@ -42,6 +42,7 @@ jobs:
             --logos-path logos \
             --cache-dir cache \
             --output-dir build
+            --base-path /SONiC-Landscape
 
       - name: Fix routing for GitHub Pages SPA
         run: cp build/index.html build/404.html
