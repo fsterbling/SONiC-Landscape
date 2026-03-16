@@ -27,6 +27,9 @@ jobs:
           restore-keys: |
             landscape2-cache-
 
+      - name: Download logos from LF CDN
+        run: bash logos/download-logos.sh
+
       - name: Install landscape2
         run: |
           curl --proto '=https' --tlsv1.2 -LsSf \
