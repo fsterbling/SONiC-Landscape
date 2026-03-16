@@ -18,21 +18,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Install landscape2
-        run: |
-          curl --proto '=https' --tlsv1.2 -LsSf \
-            https://github.com/cncf/landscape2/releases/download/v1.1.0/landscape2-installer.sh | sh
-          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+        uses: actions/checkout@v4.2.2
 
       - name: Restore cache
-        uses: actions/cache@v4
+        uses: actions/cache@v4.2.3
         with:
           path: cache
           key: landscape2-cache-${{ github.run_id }}
           restore-keys: |
             landscape2-cache-
+
+      - name: Install landscape2
+        run: |
+          LANDSCAPE2_VERSION="v1.1.0"
+          curl -L \
+            "https://github.com/cncf/landscape2/releases/download/${LANDSCAPE2_VERSION}/landscape2-x86_64-unknown-linux-musl.tar.gz" \
+            -o landscape2.tar.gz
+          tar -xzf landscape2.tar.gz
+          sudo mv landscape2 /usr/local/bin/landscape2
+          landscape2 --version
 
       - name: Build landscape
         run: |
@@ -50,7 +54,7 @@ jobs:
         run: cp build/index.html build/404.html
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.7.3
         with:
           branch: gh-pages
           folder: build
