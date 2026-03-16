@@ -1,607 +1,367 @@
----
-# SONiC Foundation Landscape Data
-# Generated for landscape2 (https://github.com/cncf/landscape2)
-# Members sourced from https://sonicfoundation.dev/members/
+# yaml-language-server: $schema=https://raw.githubusercontent.com/cncf/landscape2/refs/heads/main/docs/config/schema/data.schema.json
 
 landscape:
 
   ##############################################################################
-  # CATEGORY: SONiC Members
-  ##############################################################################
-
-  - category: SONiC Members
+  - category:
+    name: SONiC Members
     subcategories:
 
-      # ────────────────────────────────────────────────────────────────────────
-      - subcategory: Premier Members
+      - subcategory:
+        name: Premier Members
         items:
 
-          - name: Alibaba
+          - item:
+            name: Alibaba
             homepage_url: https://www.alibaba-inc.com
             logo: alibaba.svg
             crunchbase: https://www.crunchbase.com/organization/alibaba
-            description: >-
-              Alibaba Group is a hyperscaler and one of the earliest large-scale
-              deployers of SONiC across its global data-center fabric.
+            description: Alibaba Group is a hyperscaler and one of the earliest large-scale deployers of SONiC across its global data-center fabric.
 
-          - name: Arista Networks
+          - item:
+            name: Arista Networks
             homepage_url: https://www.arista.com
             logo: arista.svg
             crunchbase: https://www.crunchbase.com/organization/arista-networks
-            description: >-
-              Arista Networks delivers cloud networking solutions built on
-              EOS and actively contributes to the SONiC ecosystem.
+            description: Arista Networks delivers cloud networking solutions and actively contributes to the SONiC ecosystem.
 
-          - name: Broadcom
+          - item:
+            name: Broadcom
             homepage_url: https://www.broadcom.com
             logo: broadcom.svg
             crunchbase: https://www.crunchbase.com/organization/broadcom
-            description: >-
-              Broadcom provides the silicon (Trident, Tomahawk, Jericho families)
-              that underpins the majority of SONiC-capable switches worldwide and
-              distributes its own Enterprise SONiC distribution.
+            description: Broadcom provides the silicon (Trident, Tomahawk, Jericho families) underpinning the majority of SONiC-capable switches worldwide.
 
-          - name: Celestica
+          - item:
+            name: Celestica
             homepage_url: https://www.celestica.com
             logo: celestica.svg
             crunchbase: https://www.crunchbase.com/organization/celestica
-            description: >-
-              Celestica designs and manufactures open white-box switches (DS series)
-              that run SONiC and are validated by multiple ecosystem partners.
+            description: Celestica designs and manufactures open white-box switches (DS/ES series) that run SONiC and are validated by multiple ecosystem partners.
 
-          - name: Cisco Systems
+          - item:
+            name: Cisco Systems
             homepage_url: https://www.cisco.com
             logo: cisco.svg
             crunchbase: https://www.crunchbase.com/organization/cisco-systems
-            description: >-
-              Cisco supports SONiC on its Nexus and Silicon One platforms and
-              has invested in the SONiC ecosystem through partners including
-              Aviz Networks.
+            description: Cisco supports SONiC on its Nexus and Silicon One platforms and has invested in the SONiC ecosystem.
 
-          - name: Dell Technologies
+          - item:
+            name: Dell Technologies
             homepage_url: https://www.delltechnologies.com
             logo: dell.svg
             crunchbase: https://www.crunchbase.com/organization/dell-technologies
-            description: >-
-              Dell offers its PowerSwitch portfolio with full SONiC support and
-              is one of the key hardware vendors validated across multiple SONiC
-              distributions.
+            description: Dell offers its PowerSwitch portfolio with full SONiC support and is a key hardware vendor validated across multiple SONiC distributions.
 
-          - name: Google
+          - item:
+            name: Google
             homepage_url: https://www.google.com
             logo: google.svg
             crunchbase: https://www.crunchbase.com/organization/google
-            description: >-
-              Google uses SONiC extensively in its global network infrastructure
-              and is an active contributor to the upstream open-source project.
+            description: Google uses SONiC extensively in its global network infrastructure and is an active contributor to the upstream open-source project.
 
-          - name: Marvell Technology
+          - item:
+            name: Marvell Technology
             homepage_url: https://www.marvell.com
             logo: marvell.svg
             crunchbase: https://www.crunchbase.com/organization/marvell-semiconductor
-            description: >-
-              Marvell provides ASIC silicon (Prestera, Teralynx) with full
-              SAI / SONiC support, enabling multi-vendor open-networking deployments.
+            description: Marvell provides ASIC silicon (Prestera, Teralynx) with full SAI/SONiC support for multi-vendor open-networking deployments.
 
-          - name: Microsoft
+          - item:
+            name: Microsoft
             homepage_url: https://www.microsoft.com
             logo: microsoft.svg
             crunchbase: https://www.crunchbase.com/organization/microsoft
-            description: >-
-              Microsoft created SONiC for Azure data centers in 2016 and
-              open-sourced it, seeding the global community that now powers the
-              SONiC Foundation.
+            description: Microsoft created SONiC for Azure data centers in 2016 and open-sourced it, seeding the global community that now powers the SONiC Foundation.
 
-          - name: Nexthop AI
+          - item:
+            name: Nexthop AI
             homepage_url: https://nexthop.ai
             logo: nexthop-ai.svg
-            description: >-
-              Nexthop AI builds AI-native networking solutions leveraging SONiC
-              for hyperscale and enterprise AI infrastructure deployments.
+            description: Nexthop AI builds AI-native networking solutions leveraging SONiC for hyperscale and enterprise AI infrastructure deployments.
 
-          - name: Nokia
+          - item:
+            name: Nokia
             homepage_url: https://www.nokia.com
             logo: nokia.svg
             crunchbase: https://www.crunchbase.com/organization/nokia
-            description: >-
-              Nokia joined the SONiC Foundation as a Premier Member and integrates
-              SONiC into its open-networking and IP/optical portfolio.
+            description: Nokia joined the SONiC Foundation as a Premier Member and integrates SONiC into its open-networking and IP/optical portfolio.
 
-          - name: NVIDIA
+          - item:
+            name: NVIDIA
             homepage_url: https://www.nvidia.com
             logo: nvidia.svg
             crunchbase: https://www.crunchbase.com/organization/nvidia
-            description: >-
-              NVIDIA Spectrum ASIC series ships with full SONiC support and
-              NVIDIA actively drives RoCEv2/AI fabric features within the SONiC
-              community for large-scale GPU clusters.
+            description: NVIDIA Spectrum ASICs ship with full SONiC support and NVIDIA actively drives RoCEv2/AI fabric features for large-scale GPU clusters.
 
-          - name: Upscale AI
+          - item:
+            name: Upscale AI
             homepage_url: https://upscaleai.com
             logo: upscale-ai.svg
-            description: >-
-              Upscale AI delivers AI-optimized network infrastructure solutions
-              built on SONiC for next-generation AI data centers.
+            description: Upscale AI delivers AI-optimized network infrastructure solutions built on SONiC for next-generation AI data centers.
 
-      # ────────────────────────────────────────────────────────────────────────
-      - subcategory: General Members
+      - subcategory:
+        name: General Members
         items:
 
-          - name: Aria Networks
+          - item:
+            name: Aria Networks
             homepage_url: https://www.arianetworks.com
             logo: aria-networks.svg
-            description: >-
-              Aria Networks provides AI-driven network automation and
-              optimization solutions compatible with SONiC environments.
+            description: Aria Networks provides AI-driven network automation and optimization solutions compatible with SONiC environments.
 
-          - name: Asterfusion Data Technologies
+          - item:
+            name: Asterfusion Data Technologies
             homepage_url: https://www.cloudswit.ch
             logo: asterfusion.svg
-            description: >-
-              Asterfusion designs white-box switches running SONiC, targeting
-              cloud and data-center operators seeking open-networking alternatives.
+            description: Asterfusion designs white-box switches running SONiC, targeting cloud and data-center operators seeking open-networking alternatives.
 
-          - name: Aviz Networks
+          - item:
+            name: Aviz Networks
             homepage_url: https://aviznetworks.com
             logo: aviz.svg
             crunchbase: https://www.crunchbase.com/organization/aviz-networks
-            description: >-
-              Aviz Networks delivers vendor-agnostic SONiC solutions including
-              Aviz Certified Community SONiC, the ONES orchestration/observability
-              suite, Network Copilot™, and the Fabric Test Automation Suite (FTAS).
-              Often called the "Red Hat for networking," Aviz brings enterprise-grade
-              support backed by over 20,000 switch-years of production SONiC
-              experience.
+            description: Aviz Networks delivers vendor-agnostic SONiC solutions including the ONES orchestration suite, Network Copilot, and Fabric Test Automation Suite (FTAS).
 
-          - name: BE Networks
+          - item:
+            name: BE Networks
             homepage_url: https://be-net.com
             logo: be-networks.svg
-            description: >-
-              BE Networks is a strategic partner of STORDIS, delivering enhanced
-              open-networking solutions based on SONiC for enterprise customers.
+            description: BE Networks delivers enhanced open-networking solutions based on SONiC for enterprise customers.
 
-          - name: Denvr Dataworks
+          - item:
+            name: Denvr Dataworks
             homepage_url: https://denvrdata.com
             logo: denvr-dataworks.svg
-            description: >-
-              Denvr Dataworks operates GPU-as-a-service cloud infrastructure
-              leveraging SONiC for high-performance AI fabric networking.
+            description: Denvr Dataworks operates GPU-as-a-service cloud infrastructure leveraging SONiC for high-performance AI fabric networking.
 
-          - name: Dorado Software
+          - item:
+            name: Dorado Software
             homepage_url: https://doradosoftware.com
             logo: dorado-software.svg
-            description: >-
-              Dorado Software provides network management and analytics tools
-              that integrate with SONiC-based open-networking environments.
+            description: Dorado Software provides network management and analytics tools that integrate with SONiC-based open-networking environments.
 
-          - name: Edgecore Networks
+          - item:
+            name: Edgecore Networks
             homepage_url: https://www.edge-core.com
             logo: edgecore.svg
             crunchbase: https://www.crunchbase.com/organization/edgecore-networks
-            description: >-
-              Edgecore Networks is a leading ODM for open white-box switches
-              from 1G to 800G, offering platforms certified to run community and
-              enterprise SONiC distributions across data center, campus, and
-              service-provider use cases.
+            description: Edgecore Networks is a leading ODM for open white-box switches from 1G to 800G, offering platforms certified to run SONiC distributions.
 
-          - name: Hedgehog
+          - item:
+            name: Hedgehog
             homepage_url: https://hedgehog.cloud
             logo: hedgehog.svg
-            description: >-
-              Hedgehog builds the Open Network Fabric—a Kubernetes-native,
-              open-source networking platform powered by SONiC. It delivers
-              cloud-like VPC abstractions and automated fabric operations for
-              edge and distributed-cloud environments, enabling enterprises to
-              run cloud-native workloads on commodity hardware without vendor
-              lock-in.
+            description: Hedgehog builds the Open Network Fabric, a Kubernetes-native open-source networking platform powered by SONiC for edge and distributed-cloud environments.
 
-          - name: iA Cloud
+          - item:
+            name: iA Cloud
             homepage_url: https://iacloud.kr
             logo: ia-cloud.svg
-            description: >-
-              iA Cloud is a South Korean cloud and networking solutions provider
-              contributing to SONiC adoption in Asia-Pacific enterprise markets.
+            description: iA Cloud is a South Korean cloud and networking solutions provider contributing to SONiC adoption in Asia-Pacific enterprise markets.
 
-          - name: Juniper Networks
+          - item:
+            name: Juniper Networks
             homepage_url: https://www.juniper.net
             logo: juniper.svg
             crunchbase: https://www.crunchbase.com/organization/juniper-networks
-            description: >-
-              Juniper Networks integrates SONiC support into its QFX switching
-              portfolio (QFX5240, QFX5250) and participates in the SONiC
-              Foundation as a General Member.
+            description: Juniper Networks integrates SONiC support into its QFX switching portfolio and participates in the SONiC Foundation as a General Member.
 
-          - name: Larch Networks
+          - item:
+            name: Larch Networks
             homepage_url: https://larch-networks.com
             logo: larch-networks.svg
-            description: >-
-              Larch Networks delivers disaggregated networking solutions and
-              professional services for SONiC-based data-center deployments.
+            description: Larch Networks delivers disaggregated networking solutions and professional services for SONiC-based data-center deployments.
 
-          - name: Micas Networks
+          - item:
+            name: Micas Networks
             homepage_url: https://micasnetworks.com
             logo: micas-networks.svg
-            description: >-
-              Micas Networks manufactures open white-box switches from 1G to 800G
-              validated with SONiC, targeting hyperscale and enterprise fabrics.
+            description: Micas Networks manufactures open white-box switches from 1G to 800G validated with SONiC, targeting hyperscale and enterprise fabrics.
 
-          - name: Netweb Technologies
+          - item:
+            name: Netweb Technologies
             homepage_url: https://netwebindia.com
             logo: netweb-technologies.svg
-            description: >-
-              Netweb Technologies is an Indian IT infrastructure company
-              expanding SONiC adoption across the South Asian enterprise market.
+            description: Netweb Technologies is an Indian IT infrastructure company expanding SONiC adoption across the South Asian enterprise market.
 
-          - name: PalCNetworks
+          - item:
+            name: PalCNetworks
             homepage_url: https://palcnetworks.com
             logo: palcnetworks.svg
-            description: >-
-              PalCNetworks delivers networking solutions and integration services
-              built on open platforms including SONiC.
+            description: PalCNetworks delivers networking solutions and integration services built on open platforms including SONiC.
 
-          - name: PANTHEON.tech
+          - item:
+            name: PANTHEON.tech
             homepage_url: https://pantheon.tech
             logo: pantheon-tech.svg
             crunchbase: https://www.crunchbase.com/organization/pantheon-tech
-            description: >-
-              PANTHEON.tech is a European open-networking software company and
-              SONiC Foundation General Member. It offers SONiC expertise services
-              and the SandWork network orchestration platform.
+            description: PANTHEON.tech is a European open-networking software company offering SONiC expertise services and the SandWork network orchestration platform.
 
-          - name: PLVision
+          - item:
+            name: PLVision
             homepage_url: https://plvision.eu
             logo: plvision.svg
-            description: >-
-              PLVision is a European networking software product-development
-              company specialising in custom SONiC distributions (SONiC Lite),
-              SAI Challenger testing, and end-to-end SONiC integration for OEMs,
-              ODMs, and enterprises since 2007.
+            description: PLVision specialises in custom SONiC distributions, SAI Challenger testing, and end-to-end SONiC integration for OEMs, ODMs, and enterprises.
 
-          - name: STORDIS
+          - item:
+            name: STORDIS
             homepage_url: https://stordis.com
             logo: stordis.svg
-            description: >-
-              STORDIS is The Open Networking Expert and distributor of Enterprise
-              SONiC Distribution (based on Broadcom's hardened SONiC). It provides
-              MONSOON monitoring, SONiC bootcamps, virtual lab environments, and
-              Open2Support SLAs for data-center, enterprise, and telecom deployments.
+            description: STORDIS is The Open Networking Expert, distributing Enterprise SONiC and providing MONSOON monitoring, SONiC bootcamps, and Open2Support SLAs.
 
-          - name: Sumitomo Electric Industry
+          - item:
+            name: Sumitomo Electric Industry
             homepage_url: https://www.global-sei.com
             logo: sumitomo.svg
-            description: >-
-              Sumitomo Electric brings optical and network hardware expertise
-              to the SONiC ecosystem, supporting open-networking adoption in
-              Japanese and global enterprise markets.
+            description: Sumitomo Electric brings optical and network hardware expertise to the SONiC ecosystem, supporting open-networking adoption globally.
 
-      # ────────────────────────────────────────────────────────────────────────
-      - subcategory: Associate Members
+      - subcategory:
+        name: Associate Members
         items:
 
-          - name: Abater Foundation
+          - item:
+            name: Abater Foundation
             homepage_url: https://abater.io
             logo: abater.svg
-            description: >-
-              Abater Foundation is a non-profit organization advancing open
-              networking and SONiC adoption in research and community settings.
+            description: Abater Foundation is a non-profit advancing open networking and SONiC adoption in research and community settings.
 
-          - name: BDBOS
+          - item:
+            name: BDBOS
             homepage_url: https://bdbos.bund.de
             logo: bdbos.svg
-            description: >-
-              BDBOS is the German federal authority for digital radio for
-              public safety, exploring SONiC for sovereign, open-network
-              infrastructure in government environments.
+            description: BDBOS is the German federal authority for digital radio for public safety, exploring SONiC for sovereign open-network infrastructure.
 
-          - name: CMKL University
+          - item:
+            name: CMKL University
             homepage_url: https://cmkl.ac.th
             logo: cmkl-university.svg
-            description: >-
-              CMKL University (Thailand) uses SONiC for research and
-              academic networking, contributing to the next generation of
-              open-networking engineers.
+            description: CMKL University (Thailand) uses SONiC for research and academic networking, contributing to the next generation of open-networking engineers.
 
-          - name: EPFL
+          - item:
+            name: EPFL
             homepage_url: https://epfl.ch
             logo: epfl.svg
-            description: >-
-              EPFL (École Polytechnique Fédérale de Lausanne) is a leading
-              Swiss technical university researching programmable networks
-              and SONiC-based infrastructure.
+            description: EPFL is a leading Swiss technical university researching programmable networks and SONiC-based infrastructure.
 
-          - name: University of Rome Tor Vergata
+          - item:
+            name: University of Rome Tor Vergata
             homepage_url: https://uniroma2.it
             logo: uniroma2.svg
-            description: >-
-              The University of Rome Tor Vergata conducts networking research
-              leveraging SONiC for academic and experimental deployments.
+            description: The University of Rome Tor Vergata conducts networking research leveraging SONiC for academic and experimental deployments.
 
   ##############################################################################
-  # CATEGORY: SONiC Products & Solutions
-  ##############################################################################
-
-  - category: SONiC Products & Solutions
+  - category:
+    name: SONiC Products & Solutions
     subcategories:
 
-      # ────────────────────────────────────────────────────────────────────────
-      - subcategory: Orchestration & Automation
+      - subcategory:
+        name: Orchestration & Automation
         items:
 
-          - name: SandWork
+          - item:
+            name: SandWork
             homepage_url: https://pantheon.tech/products/sandwork/
             logo: sandwork.svg
-            description: >-
-              SandWork is PANTHEON.tech's intent-based network orchestration,
-              automation, and assurance platform purpose-built for SONiC.
-              It handles Day 2+ fabric configurations (VXLAN, switchports,
-              MC-LAG), continuously reconciles network intent with actual
-              state across underlay and overlay layers, and supports
-              large-scale enterprise SONiC deployments on validated hardware
-              from Celestica, Dell, and Micas.
-            extra:
-              tag: Orchestration
-              member: PANTHEON.tech
-              member_subcategory: General Members
+            description: SandWork is PANTHEON.tech's intent-based network orchestration, automation, and assurance platform purpose-built for SONiC. It handles Day 2+ fabric configurations (VXLAN, switchports, MC-LAG) and supports large-scale enterprise SONiC deployments.
 
-          - name: Aviz ONES
-            homepage_url: https://aviznetworks.com/products/ones
-            logo: aviz-ones.svg
-            description: >-
-              Open Networking Enterprise Suite (ONES) is Aviz Networks' unified
-              SONiC operations platform offering multi-vendor orchestration,
-              deep observability (250+ metrics), real-time alerting, and
-              bi-weekly trend analysis — with a 30-minute enterprise SLA.
-            extra:
-              tag: Orchestration
-              member: Aviz Networks
-              member_subcategory: General Members
+          - item:
+            name: Aviz ONES
+            homepage_url: https://aviznetworks.com
+            logo: aviz.svg
+            description: Open Networking Enterprise Suite (ONES) is Aviz Networks' unified SONiC operations platform offering multi-vendor orchestration, deep observability, and real-time alerting with a 30-minute enterprise SLA.
 
-          - name: Hedgehog Open Network Fabric
-            homepage_url: https://githedgehog.com
+          - item:
+            name: Hedgehog Open Network Fabric
+            homepage_url: https://hedgehog.cloud
             repo_url: https://github.com/githedgehog/fabric
-            logo: hedgehog-fabric.svg
-            description: >-
-              An open-source, Kubernetes-native network fabric powered by SONiC.
-              Provides VPC abstractions, multi-tenant APIs, and automated fabric
-              operations for private cloud and edge deployments. Licensed under
-              Apache 2.0.
-            extra:
-              tag: Fabric Automation
-              member: Hedgehog
-              member_subcategory: General Members
+            logo: hedgehog.svg
+            description: An open-source, Kubernetes-native network fabric powered by SONiC. Provides VPC abstractions, multi-tenant APIs, and automated fabric operations for private cloud and edge deployments.
 
-      # ────────────────────────────────────────────────────────────────────────
-      - subcategory: SONiC Distributions
+      - subcategory:
+        name: SONiC Distributions
         items:
 
-          - name: Aviz Certified Community SONiC
-            homepage_url: https://aviznetworks.com/products/why-sonic
-            logo: aviz-sonic.svg
-            description: >-
-              A pre-tested, multi-ASIC, enterprise-ready SONiC distribution
-              supporting silicon from NVIDIA, Cisco, Marvell, and Broadcom.
-              Includes 500+ automated FTAS tests, validated runbooks for
-              IP CLOS / EVPN-VXLAN / MLAG fabrics, and 24/7 commercial support
-              backed by 20,000+ switch-years of production experience.
-            extra:
-              tag: NOS Distribution
-              member: Aviz Networks
-              member_subcategory: General Members
-
-          - name: Enterprise SONiC (STORDIS)
-            homepage_url: https://stordis.com
-            logo: stordis-sonic.svg
-            description: >-
-              STORDIS Enterprise SONiC Distribution is a ruggedised, commercially
-              supported NOS based on Broadcom's open-source SONiC with feature
-              enrichment for data-center, campus, and telecom environments.
-              Supported on platforms from Edgecore, Celestica, Dell, Quanta,
-              Micas, and others. Complemented by MONSOON telemetry and
-              Open2Support SLAs.
-            extra:
-              tag: NOS Distribution
-              member: STORDIS
-              member_subcategory: General Members
-
-          - name: SONiC Lite (PLVision)
-            homepage_url: https://plvision.eu/sonic-lite
-            logo: plvision-sonic-lite.svg
-            description: >-
-              SONiC Lite is PLVision's lightweight enterprise SONiC distribution
-              optimised for access, edge, campus, and OOB management switches
-              with 30–50% lower hardware requirements. Delivers full vendor
-              neutrality, L2/L3 features, PoE, QoS, and security — with
-              validated hardware from Edgecore, Wistron, and others.
-            extra:
-              tag: NOS Distribution
-              member: PLVision
-              member_subcategory: General Members
-
-      # ────────────────────────────────────────────────────────────────────────
-      - subcategory: Observability & Monitoring
-        items:
-
-          - name: MONSOON (STORDIS)
-            homepage_url: https://stordis.com
-            logo: stordis-monsoon.svg
-            description: >-
-              MONSOON is STORDIS's open-source network monitoring exporter
-              for SONiC devices. It provides affordable, easy-to-deploy telemetry
-              collection from routers and switches running SONiC.
-            extra:
-              tag: Monitoring
-              member: STORDIS
-              member_subcategory: General Members
-
-          - name: Network Copilot™ (Aviz)
+          - item:
+            name: Aviz Certified Community SONiC
             homepage_url: https://aviznetworks.com
-            logo: aviz-copilot.svg
-            description: >-
-              Aviz Network Copilot™ is an AI-powered network management assistant
-              that delivers intelligent insights, automated troubleshooting, and
-              conversational operations for SONiC-based networks.
-            extra:
-              tag: AI/Monitoring
-              member: Aviz Networks
-              member_subcategory: General Members
+            logo: aviz.svg
+            description: A pre-tested, multi-ASIC, enterprise-ready SONiC distribution supporting silicon from NVIDIA, Cisco, Marvell, and Broadcom with 500+ automated tests and 24/7 commercial support.
 
-          - name: Aviz Packet Broker
-            homepage_url: https://aviznetworks.com
-            logo: aviz-packet-broker.svg
-            description: >-
-              Aviz Packet Broker (APB) provides deep network observability and
-              flow visibility for SONiC environments, enabling enterprises to
-              monitor traffic at scale without proprietary lock-in.
-            extra:
-              tag: Observability
-              member: Aviz Networks
-              member_subcategory: General Members
-
-      # ────────────────────────────────────────────────────────────────────────
-      - subcategory: Testing & Validation
-        items:
-
-          - name: Fabric Test Automation Suite (Aviz FTAS)
-            homepage_url: https://aviznetworks.com
-            logo: aviz-ftas.svg
-            description: >-
-              Aviz FTAS is a comprehensive automated testing suite for SONiC
-              comprising 500+ test cases. It validates feature quality across
-              multi-vendor hardware and ASIC platforms, dramatically shortening
-              qualification cycles for switch manufacturers and enterprises.
-            extra:
-              tag: Testing
-              member: Aviz Networks
-              member_subcategory: General Members
-
-          - name: SAI Challenger (PLVision)
-            homepage_url: https://plvision.eu/offerings/sonic-care-suite
-            repo_url: https://github.com/opencomputeproject/SAI-Challenger
-            logo: plvision-sai.svg
-            description: >-
-              SAI Challenger is PLVision's open-source framework for SAI
-              functional and integration testing built on SONiC's native
-              infrastructure. It enables fast, simple testing of any SAI
-              implementation from software-based simulation to line-rate
-              hardware testing.
-            extra:
-              tag: Testing
-              member: PLVision
-              member_subcategory: General Members
-
-      # ────────────────────────────────────────────────────────────────────────
-      - subcategory: SONiC Engineering Services
-        items:
-
-          - name: PANTHEON.tech SONiC Services
-            homepage_url: https://pantheon.tech/services/expertise/sonic-nos/
-            logo: pantheon-tech.svg
-            description: >-
-              PANTHEON.tech offers expert SONiC NOS engineering, including
-              feature development, platform porting, integration with FD.io VPP,
-              OpenDaylight, and custom network function development for
-              enterprise and carrier deployments.
-            extra:
-              tag: Professional Services
-              member: PANTHEON.tech
-              member_subcategory: General Members
-
-          - name: PLVision SONiC Care Suite
-            homepage_url: https://plvision.eu/offerings/sonic-care-suite
-            logo: plvision.svg
-            description: >-
-              PLVision's SONiC Care Suite is a comprehensive service program
-              covering all stages of SONiC adoption: platform enablement,
-              feature development, SAI integration, distribution ownership,
-              and long-term lifecycle support for switch silicon vendors,
-              OEMs/ODMs, and enterprises.
-            extra:
-              tag: Professional Services
-              member: PLVision
-              member_subcategory: General Members
-
-          - name: PLVision Custom SONiC Development
-            homepage_url: https://plvision.eu/offerings/sonic-product-development
-            logo: plvision.svg
-            description: >-
-              PLVision designs and delivers custom SONiC-based distributions
-              tailored to specific hardware and use-case requirements for
-              OEMs and ODMs. Follows a full PDLC from use-case definition
-              through prototyping, delivery, and post-development support.
-            extra:
-              tag: Professional Services
-              member: PLVision
-              member_subcategory: General Members
-
-          - name: STORDIS SONiC Bootcamps
+          - item:
+            name: Enterprise SONiC by STORDIS
             homepage_url: https://stordis.com
             logo: stordis.svg
-            description: >-
-              STORDIS offers 3-day and 4-day intensive, hands-on SONiC
-              Linux training bootcamps leading to a Certified SONiC System
-              Administrator credential. Over 500 SONiC engineers trained in 2024.
-            extra:
-              tag: Training
-              member: STORDIS
-              member_subcategory: General Members
+            description: STORDIS Enterprise SONiC Distribution is a ruggedised, commercially supported NOS based on Broadcom's SONiC with feature enrichment for data-center, campus, and telecom environments.
 
-  ##############################################################################
-  # CATEGORY: SONiC Hardware Ecosystem
-  ##############################################################################
+          - item:
+            name: SONiC Lite by PLVision
+            homepage_url: https://plvision.eu
+            logo: plvision.svg
+            description: SONiC Lite is PLVision's lightweight enterprise SONiC distribution optimised for access, edge, campus, and OOB management switches with 30-50% lower hardware requirements.
 
-  - category: SONiC Hardware Ecosystem
-    subcategories:
-
-      - subcategory: Switch Platforms
+      - subcategory:
+        name: Observability & Monitoring
         items:
 
-          - name: Celestica DS/ES Series
+          - item:
+            name: MONSOON by STORDIS
+            homepage_url: https://stordis.com
+            logo: stordis.svg
+            description: MONSOON is STORDIS's open-source network monitoring exporter for SONiC devices, providing affordable telemetry collection from routers and switches.
+
+          - item:
+            name: Aviz Network Copilot
+            homepage_url: https://aviznetworks.com
+            logo: aviz.svg
+            description: An AI-powered network management assistant that delivers intelligent insights, automated troubleshooting, and conversational operations for SONiC-based networks.
+
+      - subcategory:
+        name: Testing & Validation
+        items:
+
+          - item:
+            name: Aviz FTAS
+            homepage_url: https://aviznetworks.com
+            logo: aviz.svg
+            description: Fabric Test Automation Suite (FTAS) is a comprehensive automated testing suite for SONiC comprising 500+ test cases, validating feature quality across multi-vendor hardware and ASIC platforms.
+
+          - item:
+            name: SAI Challenger by PLVision
+            homepage_url: https://plvision.eu
+            repo_url: https://github.com/opencomputeproject/SAI-Challenger
+            logo: plvision.svg
+            description: An open-source framework for SAI functional and integration testing built on SONiC's native infrastructure, enabling fast testing of any SAI implementation.
+
+  ##############################################################################
+  - category:
+    name: SONiC Hardware Ecosystem
+    subcategories:
+
+      - subcategory:
+        name: Switch Platforms
+        items:
+
+          - item:
+            name: Celestica DS/ES Series
             homepage_url: https://www.celestica.com
             logo: celestica.svg
-            description: >-
-              Celestica's DS and ES series white-box switches span 1G campus
-              (Vulcan/ES1010/ES1050 with PoE++), through 400G spine (DS4000),
-              to 800G AI fabric (DS5000/DS4101) — all SONiC-validated and
-              listed in SandWork's compatibility matrix.
-            extra:
-              tag: Hardware
-              member: Celestica
-              member_subcategory: Premier Members
+            description: Celestica's DS and ES series white-box switches span 1G campus through 400G spine to 800G AI fabric, all SONiC-validated and listed in SandWork's compatibility matrix.
 
-          - name: Dell PowerSwitch S/Z/N Series
+          - item:
+            name: Dell PowerSwitch S/Z/N Series
             homepage_url: https://www.delltechnologies.com
             logo: dell.svg
-            description: >-
-              Dell's PowerSwitch portfolio (S-series leaf/access, Z-series spine,
-              N-series campus) supports community and enterprise SONiC across
-              10G to 800G form factors, validated by Aviz, STORDIS, and
-              PANTHEON.tech SandWork.
-            extra:
-              tag: Hardware
-              member: Dell Technologies
-              member_subcategory: Premier Members
+            description: Dell's PowerSwitch portfolio supports community and enterprise SONiC across 10G to 800G form factors, validated by Aviz, STORDIS, and PANTHEON.tech SandWork.
 
-          - name: Edgecore Networks Switches
+          - item:
+            name: Edgecore Networks Switches
             homepage_url: https://www.edge-core.com
             logo: edgecore.svg
-            description: >-
-              Edgecore provides a full line of open 1G–800G Ethernet switches
-              supporting community SONiC, Enterprise SONiC, and SONiC Lite.
-              Models span data-center, campus, and service-provider use cases
-              and appear in multiple ecosystem HCLs.
-            extra:
-              tag: Hardware
-              member: Edgecore Networks
-              member_subcategory: General Members
+            description: Edgecore provides a full line of open 1G-800G Ethernet switches supporting community SONiC, Enterprise SONiC, and SONiC Lite across data-center, campus, and service-provider use cases.
 
-          - name: Micas Networks Open Switches
+          - item:
+            name: Micas Networks Open Switches
             homepage_url: https://micasnetworks.com
             logo: micas-networks.svg
-            description: >-
-              Micas produces white-box open switches from 1G access to 128×400G
-              and 64×800G spine, all appearing on SandWork's validated hardware
-              compatibility list for SONiC-based data-center fabrics.
-            extra:
-              tag: Hardware
-              member: Micas Networks
-              member_subcategory: General Members
+            description: Micas produces white-box open switches from 1G access to 128x400G and 64x800G spine, all appearing on SandWork's validated hardware compatibility list.
