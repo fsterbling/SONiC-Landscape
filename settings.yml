@@ -1,12 +1,7 @@
----
-# SONiC Foundation Landscape – Settings
-# Reference: https://github.com/cncf/landscape2/blob/main/docs/config/settings.yml
-
 foundation: SONiC Foundation
 
 url: https://fsterbling.github.io/SONiC-Landscape
 
-# ── Branding ─────────────────────────────────────────────────────────────────
 images:
   favicon: https://sonicfoundation.dev/wp-content/uploads/sites/21/2023/04/logo.svg
   footer_logo: https://sonicfoundation.dev/wp-content/uploads/sites/21/2023/04/logo-white.svg
@@ -14,102 +9,33 @@ images:
   open_graph: https://sonicfoundation.dev/wp-content/uploads/sites/21/2023/04/logo.svg
 
 colors:
-  color1: "rgba(0, 131, 188, 1)"     # SONiC teal/blue – primary
-  color2: "rgba(0, 90, 130, 1)"      # Dark blue – secondary
-  color3: "rgba(0, 131, 188, 1)"     # Accent
-  color4: "rgba(230, 247, 255, 1)"   # Light background
-  color5: "rgba(0, 50, 80, 1)"       # Text on light
-  color6: "rgba(255, 255, 255, 1)"   # White
-  color7: "rgba(255, 255, 255, 1)"   # White
+  color1: "rgba(0, 131, 188, 1)"
+  color2: "rgba(0, 90, 130, 1)"
+  color3: "rgba(0, 131, 188, 1)"
+  color4: "rgba(230, 247, 255, 1)"
+  color5: "rgba(0, 50, 80, 1)"
+  color6: "rgba(255, 255, 255, 1)"
+  color7: "rgba(0, 131, 188, 0.1)"
 
-# ── Header links ─────────────────────────────────────────────────────────────
-header:
-  links:
-    - name: SONiC Foundation
-      url: https://sonicfoundation.dev
-    - name: GitHub
-      url: https://github.com/sonic-net/SONiC
-    - name: Join
-      url: https://sonicfoundation.dev/join
-
-# ── Footer ───────────────────────────────────────────────────────────────────
-footer:
-  links:
-    - name: Home
-      url: https://sonicfoundation.dev
-    - name: About SONiC
-      url: https://sonicfoundation.dev/about/
-    - name: Members
-      url: https://sonicfoundation.dev/members/
-    - name: GitHub
-      url: https://github.com/sonic-net/SONiC
-    - name: Slack
-      url: https://join.slack.com/t/sonicswitch/shared_invite/zt-2dk07k69u-rqw22RvWuKJrLNpDaxOxbg
-    - name: LinkedIn
-      url: https://linkedin.com/company/sonic-fund
-    - name: YouTube
-      url: https://www.youtube.com/@sonic-fund/featured
-  text: >-
-    Copyright © 2025 The Linux Foundation®. All rights reserved.
-    The Linux Foundation has registered trademarks and uses trademarks.
-    Linux® is a registered trademark of Linus Torvalds.
-    SONiC is a Linux Foundation project.
-
-# ── Grid layout ──────────────────────────────────────────────────────────────
 grid_items_size: medium
 
-# ── Categories to feature prominently ────────────────────────────────────────
-featured_items:
-  - field: member
-    options:
-      - value: PANTHEON.tech
-        label: Member
-        backgroundColor: "#e6f7ff"
-        foregroundColor: "#00538c"
-      - value: Aviz Networks
-        label: Member
-        backgroundColor: "#e6f7ff"
-        foregroundColor: "#00538c"
-      - value: Hedgehog
-        label: Member
-        backgroundColor: "#e6f7ff"
-        foregroundColor: "#00538c"
-      - value: PLVision
-        label: Member
-        backgroundColor: "#e6f7ff"
-        foregroundColor: "#00538c"
-      - value: STORDIS
-        label: Member
-        backgroundColor: "#e6f7ff"
-        foregroundColor: "#00538c"
-
-# ── Groups (tab views) ───────────────────────────────────────────────────────
 groups:
   - name: Members
     categories:
       - SONiC Members
-
   - name: Products & Solutions
     categories:
       - SONiC Products & Solutions
-
   - name: Hardware
     categories:
       - SONiC Hardware Ecosystem
 
-  - name: All
-    categories:
-      - SONiC Members
-      - SONiC Products & Solutions
-      - SONiC Hardware Ecosystem
-
-# ── Member categories for the members section ────────────────────────────────
 members_category: SONiC Members
 
-# ── Screenshot (optional, requires Chrome) ───────────────────────────────────
-# screenshot_width: 1440
-
-# ── Analytics (optional) ─────────────────────────────────────────────────────
-# analytics:
-#   gtm:
-#     container_id: GTM-XXXXXXX
+footer:
+  links:
+    github: https://github.com/sonic-net/SONiC
+    linkedin: https://linkedin.com/company/sonic-fund
+    youtube: https://www.youtube.com/@sonic-fund/featured
+    slack: https://join.slack.com/t/sonicswitch/shared_invite/zt-2dk07k69u-rqw22RvWuKJrLNpDaxOxbg
+  text: "Copyright © 2025 The Linux Foundation®. All rights reserved."
