@@ -27,22 +27,24 @@ jobs:
           restore-keys: |
             landscape2-cache-
 
-      - name: Build landscape (via Docker)
+      - name: Install landscape2
         run: |
-          mkdir -p cache
-          chmod -R 777 .
-          docker run --rm \
-            -v "${{ github.workspace }}:/landscape" \
-            -w /landscape \
-            --entrypoint landscape2 \
-            ghcr.io/cncf/landscape2:latest \
-            build \
-              --data-file data.yml \
-              --settings-file settings.yml \
-              --guide-file guide.yml \
-              --logos-path logos \
-              --cache-dir cache \
-              --output-dir build
+          curl -L \
+            "https://github.com/cncf/landscape2/releases/download/v1.1.0/landscape2-x86_64-unknown-linux-gnu.tar.xz" \
+            -o landscape2.tar.xz
+          tar -xJf landscape2.tar.xz
+          sudo mv landscape2 /usr/local/bin/landscape2
+          landscape2 --version
+
+      - name: Build landscape
+        run: |
+          landscape2 build \
+            --data-file data.yml \
+            --settings-file settings.yml \
+            --guide-file guide.yml \
+            --logos-path logos \
+            --cache-dir cache \
+            --output-dir build
 
       - name: Fix routing for GitHub Pages SPA
         run: cp build/index.html build/404.html
