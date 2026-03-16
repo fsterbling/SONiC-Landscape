@@ -1,0 +1,163 @@
+---
+# SONiC Foundation Landscape – Guide
+# Reference: https://github.com/cncf/landscape2/blob/main/docs/config/guide.yml
+
+categories:
+
+  - category: Introduction
+    content: |
+      ## Welcome to the SONiC Landscape
+
+      **SONiC** (Software for Open Networking in the Cloud) is an open-source
+      network operating system (NOS) originally created by Microsoft for its
+      Azure data centers and open-sourced in 2016. Today it is a Linux
+      Foundation project governed by the **SONiC Foundation**.
+
+      SONiC decouples network software from the underlying hardware, running on
+      hundreds of switch platforms from multiple vendors while supporting a full
+      suite of routing and switching features including BGP, EVPN/VXLAN, RDMA,
+      QoS, and more. Its modular, container-based architecture makes it cloud-
+      native by design and readily automatable.
+
+      This landscape provides a comprehensive view of the companies, products,
+      and hardware platforms that make up the SONiC ecosystem — from Premier
+      Members who shape the project's direction to specialist vendors delivering
+      production-ready SONiC distributions, orchestration tools, and validated
+      white-box hardware.
+
+  - category: SONiC Members
+    content: |
+      ## SONiC Foundation Membership
+
+      The SONiC Foundation comprises three membership tiers:
+
+      ### Premier Members
+      Premier Members are the strategic driving force of the SONiC Foundation.
+      They include hyperscalers (Alibaba, Google, Microsoft), silicon vendors
+      (Broadcom, Marvell, NVIDIA), networking incumbents (Arista, Cisco, Dell,
+      Nokia), and AI-era newcomers (Nexthop AI, Upscale AI, Celestica). Premier
+      Members have the broadest governance rights and resource commitments.
+
+      ### General Members
+      General Members form a diverse ecosystem of ODMs, software companies,
+      cloud providers, and specialist vendors. They include open-networking
+      pioneers such as Aviz Networks, Edgecore Networks, Hedgehog, PANTHEON.tech,
+      PLVision, and STORDIS — each contributing unique products, services, and
+      expertise that extend SONiC into enterprise and edge markets.
+
+      ### Associate Members
+      Associate Members are academic institutions and non-profit organizations
+      advancing SONiC research, education, and sovereign/government use cases.
+      They include EPFL, University of Rome Tor Vergata, CMKL University, BDBOS,
+      and the Abater Foundation.
+
+    subcategories:
+      - subcategory: Premier Members
+        content: |
+          Premier Members hold the highest level of membership, providing
+          significant resources and leadership to the SONiC Foundation.
+          They include hyperscalers, silicon vendors, and major networking
+          vendors who use SONiC at scale and drive its technical roadmap.
+
+      - subcategory: General Members
+        content: |
+          General Members contribute products, services, and expertise that
+          broaden SONiC's reach from hyperscaler to enterprise markets.
+          Many General Members ship validated SONiC distributions, orchestration
+          platforms, and open white-box hardware that make SONiC production-ready
+          for organizations of all sizes.
+
+      - subcategory: Associate Members
+        content: |
+          Associate Members include academic institutions and non-profit
+          organizations that advance SONiC research, train the next generation
+          of open-networking engineers, and explore SONiC in government and
+          sovereign infrastructure contexts.
+
+  - category: SONiC Products & Solutions
+    content: |
+      ## SONiC Products & Solutions
+
+      The SONiC ecosystem has spawned a rich set of commercial and open-source
+      products spanning orchestration, NOS distributions, observability,
+      testing, and professional services. This category showcases the key
+      solutions built by SONiC Foundation members.
+
+    subcategories:
+      - subcategory: Orchestration & Automation
+        content: |
+          Network orchestration tools manage the entire lifecycle of SONiC
+          fabrics — from intent definition and device onboarding through
+          Day 2+ operations. Key solutions include:
+
+          **SandWork (PANTHEON.tech)** — Intent-based orchestration and
+          automation purpose-built for enterprise SONiC, supporting VXLAN,
+          MC-LAG, multi-vendor fabrics, and both open-source and Enterprise
+          SONiC distributions.
+
+          **Aviz ONES** — A vendor-agnostic operations suite providing
+          orchestration, deep observability, and real-time monitoring for
+          any SONiC deployment with enterprise SLAs.
+
+          **Hedgehog Open Network Fabric** — A Kubernetes-native, open-source
+          fabric platform that turns SONiC into a programmable cloud-like
+          network via VPC abstractions and Kubernetes CRDs.
+
+      - subcategory: SONiC Distributions
+        content: |
+          Several members build hardened, supported distributions of SONiC
+          that fill the gap between raw open-source community code and
+          production requirements:
+
+          **Aviz Certified Community SONiC** — Multi-ASIC, hardware-agnostic,
+          enterprise-ready distribution with 500+ automated tests and 24/7
+          support. Positioned as the "Red Hat for networking."
+
+          **Enterprise SONiC (STORDIS)** — Broadcom-based ruggedised
+          distribution with feature enrichment for data center, campus, and
+          telecom, paired with MONSOON telemetry and Open2Support SLAs.
+
+          **SONiC Lite (PLVision)** — Lightweight distribution designed
+          for access, edge, and OOB management switches running on 30–50%
+          less capable (and less expensive) hardware than Community SONiC
+          requires.
+
+      - subcategory: Observability & Monitoring
+        content: |
+          Visibility into SONiC networks is critical for production operations.
+          The ecosystem provides purpose-built tools including STORDIS MONSOON,
+          Aviz Network Copilot™ (AI-powered assistant), and Aviz Packet Broker
+          for deep flow observability.
+
+      - subcategory: Testing & Validation
+        content: |
+          Quality and interoperability testing ensures reliable SONiC deployments.
+          **Aviz FTAS** provides 500+ automated test cases across multi-vendor
+          hardware, while **PLVision SAI Challenger** offers an open-source
+          framework for SAI API testing used by silicon vendors and ODMs worldwide.
+
+      - subcategory: SONiC Engineering Services
+        content: |
+          For organizations that want to build SONiC capability without hiring
+          a full in-house team, several members offer expert engineering services:
+          PANTHEON.tech for NOS development and integration, PLVision for custom
+          distribution builds and SAI work, and STORDIS for training and
+          certification.
+
+  - category: SONiC Hardware Ecosystem
+    content: |
+      ## SONiC Hardware Ecosystem
+
+      SONiC runs on white-box ("bare-metal") switches from a wide range of
+      ODMs and OEMs. The hardware ecosystem is characterized by:
+
+      - **Open ASICs**: Broadcom Trident/Tomahawk, NVIDIA Spectrum, Marvell
+        Prestera/Teralynx, and Cisco Silicon One all have SONiC SAI support.
+      - **Validated hardware lists (HCLs)**: Distributions like SandWork,
+        Aviz ONES, STORDIS Enterprise SONiC, and PLVision SONiC Lite each
+        publish vendor- and model-specific compatibility matrices.
+      - **Form factor range**: From 1G campus PoE switches through 100G leaf,
+        400G spine, to 800G AI-fabric platforms.
+
+      Key hardware providers include Celestica (DS/ES series), Dell
+      (PowerSwitch S/Z/N), Edgecore (ECS/AS series), and Micas Networks.
