@@ -5,9 +5,8 @@ on:
     branches:
       - main
   schedule:
-    # Rebuild daily at 02:00 UTC to pick up any upstream logo/data changes
     - cron: '0 2 * * *'
-  workflow_dispatch:  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -28,29 +27,22 @@ jobs:
           restore-keys: |
             landscape2-cache-
 
-      - name: Install landscape2
+      - name: Build landscape (via Docker)
         run: |
-          LANDSCAPE2_VERSION="v1.1.0"
-          curl -L \
-            "https://github.com/cncf/landscape2/releases/download/${LANDSCAPE2_VERSION}/landscape2-x86_64-unknown-linux-musl.tar.gz" \
-            -o landscape2.tar.gz
-          tar -xzf landscape2.tar.gz
-          sudo mv landscape2 /usr/local/bin/landscape2
-          landscape2 --version
-
-      - name: Build landscape
-        run: |
-          landscape2 build \
-            --data-file data.yml \
-            --settings-file settings.yml \
-            --guide-file guide.yml \
-            --logos-path logos \
-            --cache-dir cache \
-            --output-dir build
+          mkdir -p build cache
+          docker run --rm \
+            -v "${{ github.workspace }}:/landscape" \
+            -w /landscape \
+            ghcr.io/cncf/landscape2:latest \
+            build \
+              --data-file data.yml \
+              --settings-file settings.yml \
+              --guide-file guide.yml \
+              --logos-path logos \
+              --cache-dir cache \
+              --output-dir build
 
       - name: Fix routing for GitHub Pages SPA
-        # GitHub Pages serves 404.html for unknown paths;
-        # copying index.html there makes client-side routes work correctly.
         run: cp build/index.html build/404.html
 
       - name: Deploy to GitHub Pages
