@@ -20,6 +20,7 @@ colors:
   color4: "rgba(230, 247, 255, 1)"   # Light background
   color5: "rgba(0, 50, 80, 1)"       # Text on light
   color6: "rgba(255, 255, 255, 1)"   # White
+  color7: "rgba(255, 255, 255, 1)"   # White
 
 # ── Header links ─────────────────────────────────────────────────────────────
 header:
