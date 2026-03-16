@@ -4,6 +4,8 @@
 
 foundation: SONiC Foundation
 
+url: https://fsterbling.github.io/SONiC-Landscape
+
 # ── Branding ─────────────────────────────────────────────────────────────────
 images:
   favicon: https://sonicfoundation.dev/wp-content/uploads/sites/21/2023/04/logo.svg
