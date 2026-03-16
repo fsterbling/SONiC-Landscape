@@ -2,6 +2,8 @@ foundation: SONiC Foundation
 
 url: https://fsterbling.github.io/SONiC-Landscape
 
+base_path: /SONiC-Landscape
+
 images:
   favicon: https://sonicfoundation.dev/wp-content/uploads/sites/21/2023/04/logo.svg
   footer_logo: https://sonicfoundation.dev/wp-content/uploads/sites/21/2023/04/logo-white.svg
