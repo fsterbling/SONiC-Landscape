@@ -1,0 +1,41 @@
+foundation: SONiC Foundation
+
+url: https://fsterbling.github.io/SONiC-Landscape
+
+images:
+  favicon: https://sonicfoundation.dev/wp-content/uploads/sites/21/2023/04/logo.svg
+  footer_logo: https://sonicfoundation.dev/wp-content/uploads/sites/21/2023/04/logo-white.svg
+  header_logo: https://sonicfoundation.dev/wp-content/uploads/sites/21/2023/04/logo.svg
+  open_graph: https://sonicfoundation.dev/wp-content/uploads/sites/21/2023/04/logo.svg
+
+colors:
+  color1: "rgba(0, 131, 188, 1)"
+  color2: "rgba(0, 90, 130, 1)"
+  color3: "rgba(0, 131, 188, 1)"
+  color4: "rgba(230, 247, 255, 1)"
+  color5: "rgba(0, 50, 80, 1)"
+  color6: "rgba(255, 255, 255, 1)"
+  color7: "rgba(0, 131, 188, 0.1)"
+
+grid_items_size: medium
+
+groups:
+  - name: Members
+    categories:
+      - SONiC Members
+  - name: Products & Solutions
+    categories:
+      - SONiC Products & Solutions
+  - name: Hardware
+    categories:
+      - SONiC Hardware Ecosystem
+
+members_category: SONiC Members
+
+footer:
+  links:
+    github: https://github.com/sonic-net/SONiC
+    linkedin: https://linkedin.com/company/sonic-fund
+    youtube: https://www.youtube.com/@sonic-fund/featured
+    slack: https://join.slack.com/t/sonicswitch/shared_invite/zt-2dk07k69u-rqw22RvWuKJrLNpDaxOxbg
+  text: "Copyright © 2025 The Linux Foundation®. All rights reserved."
